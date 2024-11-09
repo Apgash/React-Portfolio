@@ -9,7 +9,7 @@ function Header() {
     // Returning a header element
     <header>
       {/* Displaying my name */}
-      <h1>Ashton Gardner</h1>
+      <h1>Ashton Gardner's Portfolio</h1>
       {/* Including the Navigation component */}
       <Navigation />
     </header>

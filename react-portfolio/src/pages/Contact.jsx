@@ -33,15 +33,15 @@ function Contact() {
       {/* Contact form */}
       <form>
         {/* Name input field */}
-        <input type="text" name="name" onBlur={handleBlur} onChange={handleChange} />
+        <input placeholder="Name" type="text" name="name" onBlur={handleBlur} onChange={handleChange} />
         {/* Displaying error message for name field */}
         {errors.name && <span>{errors.name}</span>}
         {/* Email input field */}
-        <input type="email" name="email" onBlur={handleBlur} onChange={handleChange} />
+        <input placeholder='Email' type="email" name="email" onBlur={handleBlur} onChange={handleChange} />
         {/* Displaying error message for email field */}
         {errors.email && <span>{errors.email}</span>}
         {/* Message input field */}
-        <textarea name="message" onBlur={handleBlur} onChange={handleChange}></textarea>
+        <textarea placeholder='Message' name="message" onBlur={handleBlur} onChange={handleChange}></textarea>
         {/* Displaying error message for message field */}
         {errors.message && <span>{errors.message}</span>}
         {/* Submit button */}

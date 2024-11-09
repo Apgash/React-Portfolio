@@ -8,7 +8,7 @@ function Portfolio() {
   const projects = [
     {
       title: 'Piano Player',
-      image: 'react-portfolio\src\assets\Screenshot 2024-11-09 125824.png',
+      image: 'src/assets/Screenshot 2024-11-09 125824.png',
       deployedUrl: 'https://apgash.github.io/Piano-Project/',
       githubUrl: 'https://github.com/Apgash/Piano-Project',
     },

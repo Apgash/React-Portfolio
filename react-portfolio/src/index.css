@@ -1,68 +1,204 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  margin: 0;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4A007E; /* Dark purple */
+  color: #ffffff;
+  padding: 1rem;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-button {
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #BB86FC; /* Light purple on hover */
+}
+
+/* Highlighted Nav Link */
+nav a.active {
+  border-bottom: 2px solid #BB86FC;
+}
+
+/* Main Section */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* About Me Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1rem;
+  color: #4A007E;
+  line-height: 1.5;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background-color: #F3E5F5; /* Light purple */
+  padding: 1rem;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.project h3 {
+  color: #4A007E;
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  display: inline-block;
+  color: #BB86FC;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #BB86FC; /* Light purple on focus */
+  outline: none;
+}
+
+form button {
+  background-color: #4A007E;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #BB86FC; /* Light purple */
+}
+
+/* Resume Section */
+.resume-link {
+  color: #4A007E;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.resume-list {
+  list-style-type: none;
+  padding: 0;
+  color: #4A007E;
+}
+
+.resume-list li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #4A007E;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #BB86FC; /* Light purple for links */
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 0.9rem;
   }
-  a:hover {
-    color: #747bff;
+  
+  #about img {
+    width: 100px;
+    height: 100px;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    padding: 0 1rem;
   }
 }
