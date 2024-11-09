@@ -1,6 +1,6 @@
 # React-Portfolio
- 
-Walkthrough Video: 
+
+Website URL: https://apgashportfolio.netlify.app/about
 
 This repository was generated using my own "README Generator!" code you can check it out on my github!
 
@@ -13,7 +13,7 @@ Contribution
 Questions
 
 Contribution
-This code was written by apgash(me) and help from the class repository and google.
+This code was written by apgash(me) and help from the class repository, google and copilot.
 
 Questions
 If you have any questions, you can contact me through my email ashtonvilkosi@gmail.com! Here is my GitHub where you can check out my other work Apgash!
