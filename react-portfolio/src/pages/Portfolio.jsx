@@ -8,25 +8,25 @@ function Portfolio() {
   const projects = [
     {
       title: 'Piano Player',
-      image: 'public/Screenshot 2024-11-09 125824.png',
+      image: '/Screenshot 2024-11-09 125824.png',
       deployedUrl: 'https://apgash.github.io/Piano-Project/',
       githubUrl: 'https://github.com/Apgash/Piano-Project',
     },
     {
       title: 'Vehicle Builder',
-      image: 'public/Screenshot 2024-11-09 140022.png',
+      image: '/Screenshot 2024-11-09 140022.png',
       deployedUrl: 'https://github.com/Apgash/Vehicle-Builder',
       githubUrl: 'https://github.com/Apgash/Vehicle-Builder',
     },
     {
       title: 'Employee Maker',
-      image: 'public/Screenshot 2024-11-09 140242.png',
+      image: '/Screenshot 2024-11-09 140242.png',
       deployedUrl: 'https://github.com/Apgash/Employee-Maker',
       githubUrl: 'https://github.com/Apgash/Employee-Maker',
     },
     {
       title: 'ReadMe Generator',
-      image: 'public/Screenshot 2024-11-09 140519.png',
+      image: '/Screenshot 2024-11-09 140519.png',
       deployedUrl: 'https://github.com/Apgash/Repository-Generator',
       githubUrl: 'https://github.com/Apgash/Repository-Generator',
     },
