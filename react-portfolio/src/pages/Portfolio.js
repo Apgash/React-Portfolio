@@ -7,10 +7,10 @@ function Portfolio() {
   // Array of project objects containing details for each project
   const projects = [
     {
-      title: 'Project One',
-      image: '/path/to/project1-image.jpg',
-      deployedUrl: 'https://project1.com',
-      githubUrl: 'https://github.com/username/project1',
+      title: 'Piano Player',
+      image: 'react-portfolio\src\assets\Screenshot 2024-11-09 125824.png',
+      deployedUrl: 'https://apgash.github.io/Piano-Project/',
+      githubUrl: 'https://github.com/Apgash/Piano-Project',
     },
     {
       title: 'Project Two',
